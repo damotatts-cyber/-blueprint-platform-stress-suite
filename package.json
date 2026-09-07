@@ -1,0 +1,12 @@
+{
+  "name": "blueprint-platform-stress-suite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Documentation and templates for stress-testing platform blueprints.",
+  "scripts": {
+    "test": "node -e \"const fs=require('fs'); const paths=['README.md','.env.sample','.gitignore','LICENSE','.github/workflows/ci.yml','plugins/blueprint-stress-suite/README.md','plugins/blueprint-stress-suite/decision-log.md','plugins/blueprint-stress-suite/templates/README_TEMPLATE.md','plugins/blueprint-stress-suite/templates/repo-invariants.md']; for (const path of paths) { if (!fs.existsSync(path)) throw new Error('Missing required file: '+path); } JSON.parse(fs.readFileSync('package.json')); console.log('Blueprint stress suite checks passed.');\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
