@@ -1,0 +1,16 @@
+{
+  "name": "blueprint-platform-stress-suite",
+  "version": "0.1.0",
+  "description": "Stress-test whether an 'any thought' can become a real, deployable GitHub blueprint",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/validate-scaffold.js"
+  },
+  "keywords": [
+    "blueprint",
+    "stress-test",
+    "scaffold"
+  ],
+  "author": "damotatts-cyber",
+  "license": "MIT"
+}
